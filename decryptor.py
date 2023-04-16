@@ -13,4 +13,9 @@ def try_again():
         else:
             print('Try answering either YES or NO')
 
-try_again()
+#decrypt function
+#replaces each character with a specific character
+#returns decrypted text
+#asks user input of encrypted text
+#program decrypts the encrypted text
+#prints decrypted text
