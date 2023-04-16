@@ -4,10 +4,10 @@ def try_again():
     while again is None:
         answer = input('Do you want to use the DECRYPTOR again? ')
         if answer == "Y" or answer == "YES" or answer == "yes" or answer == "Yes" or answer == "y":
-            again = str(answer)
+            again = True
             continue
         elif answer == "N" or answer == "NO" or answer == "no" or answer == "No" or answer == "n":
-            again = str(answer)
+            again = False
             print('Thank you for using the decryptor')
             break
         else:
@@ -27,3 +27,5 @@ d_text = decryptor(e_text)
 print(f'The message from the encrypted text: {d_text}')
 
 #sample input: th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g
+
+
