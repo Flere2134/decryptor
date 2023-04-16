@@ -14,7 +14,9 @@ def try_again():
             print('Try answering either YES or NO')
 
 #decrypt function
+def decryptor():
 #replaces each character with a specific character
+    d_text = e_text.replace('*', 'a').replace('&', 'e').replace('#', 'i').replace('+', 'o').replace('!', 'u')
 #returns decrypted text
 #asks user input of encrypted text
 #program decrypts the encrypted text
