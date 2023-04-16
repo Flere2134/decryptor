@@ -22,4 +22,6 @@ def decryptor():
 #asks user input of encrypted text
 e_text = input('Write the encrypted text you want to decrypt: ')
 #program decrypts the encrypted text
+decryptor(e_text)
 #prints decrypted text
+print(f'The message from the encrypted text is {decryptor}')
