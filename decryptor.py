@@ -18,6 +18,7 @@ def decryptor():
 #replaces each character with a specific character
     d_text = e_text.replace('*', 'a').replace('&', 'e').replace('#', 'i').replace('+', 'o').replace('!', 'u')
 #returns decrypted text
+    return d_text
 #asks user input of encrypted text
 #program decrypts the encrypted text
 #prints decrypted text
