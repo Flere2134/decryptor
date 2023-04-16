@@ -4,11 +4,10 @@ def try_again(again):
         answer = input('Do you want to use the DECRYPTOR again? ')
         if answer in ["Y", "YES", "yes", "Yes", "y"]:
             return True
-        elif answer in ["N", "NO", "no", "No", "n"]:
+        else:
+            answer in ["N", "NO", "no", "No", "n"]
             print('Thank you for using the decryptor')
             return False
-        else:
-            print('Try answering either YES or NO')
 
 #decrypt function
 def decryptor():
