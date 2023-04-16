@@ -14,7 +14,7 @@ def try_again():
             print('Try answering either YES or NO')
 
 #decrypt function
-def decryptor():
+def decryptor(e_text):
 #replaces each character with a specific character
     d_text = e_text.replace('*', 'a').replace('&', 'e').replace('#', 'i').replace('+', 'o').replace('!', 'u')
 #returns decrypted text
@@ -24,6 +24,6 @@ e_text = input('Write the encrypted text you want to decrypt: ')
 #program decrypts the encrypted text
 d_text = decryptor(e_text)
 #prints decrypted text
-print(f'The message from the encrypted text is {d_text}')
+print(f'The message from the encrypted text: {d_text}')
 
 #sample input: th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g
