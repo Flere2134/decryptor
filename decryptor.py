@@ -20,5 +20,6 @@ def decryptor():
 #returns decrypted text
     return d_text
 #asks user input of encrypted text
+e_text = input('Write the encrypted text you want to decrypt: ')
 #program decrypts the encrypted text
 #prints decrypted text
