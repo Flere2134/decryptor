@@ -3,10 +3,10 @@ def try_again():
     again = None
     while again is None:
         answer = input('Do you want to use the DECRYPTOR again? ')
-        if answer == "Y" or answer == "YES" or answer == "yes" or answer == "Yes" or answer == "y":
+        if answer in ["Y", "YES", "yes", "Yes", "y"]:
             again = True
             continue
-        elif answer == "N" or answer == "NO" or answer == "no" or answer == "No" or answer == "n":
+        elif answer in ["N", "NO", "no", "No", "n"]:
             again = False
             print('Thank you for using the decryptor')
             break
@@ -17,15 +17,19 @@ def try_again():
 def decryptor(e_text):
 #replaces each character with a specific character
     d_text = e_text.replace('*', 'a').replace('&', 'e').replace('#', 'i').replace('+', 'o').replace('!', 'u')
+#asks user input of encrypted text
+    e_text = input('Write the encrypted text you want to decrypt: ')
+#program decrypts the encrypted text
+    d_text = decryptor()
+#prints decrypted text
+    print(f'The message from the encrypted text: {d_text}')
 #returns decrypted text
     return d_text
-#asks user input of encrypted text
-e_text = input('Write the encrypted text you want to decrypt: ')
-#program decrypts the encrypted text
-d_text = decryptor(e_text)
-#prints decrypted text
-print(f'The message from the encrypted text: {d_text}')
 
 #sample input: th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g
 
-
+while True:
+    decryptor()
+    try_again()
+    if not again:
+        break
