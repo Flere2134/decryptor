@@ -24,6 +24,6 @@ e_text = input('Write the encrypted text you want to decrypt: ')
 #program decrypts the encrypted text
 d_text = decryptor(e_text)
 #prints decrypted text
-print(f'The message from the encrypted text is {decryptor}')
+print(f'The message from the encrypted text is {d_text}')
 
 #sample input: th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g
