@@ -1,7 +1,7 @@
 #try again function
 def try_again(again):
     while True:
-        answer = input('Do you want to use the DECRYPTOR again? ')
+        answer = input('\nDo you want to use the DECRYPTOR again? ')
         if answer in ["Y", "YES", "yes", "Yes", "y"]:
             return True
         else:
